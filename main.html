@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>t.js</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="explore.html">
+    <link rel="stylesheet" href="stylesheet.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="t.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="background-wrap">
-        <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-            <source src="Dark Cinematic Background - 100% Free Stock Footage.mp4" type="video/mp4">
-            Video not supported
-        </video>
+      <video
+        id="video-bg-elem"
+        preload="auto"
+        autoplay="true"
+        loop="loop"
+        muted="muted"
+      >
+        <source
+          src="Dark Cinematic Background - 100% Free Stock Footage.mp4"
+          type="video/mp4"
+        />
+        Video not supported
+      </video>
     </div>
     <pre id="main">
 Welcome To Daniel Arsham<ins><span id="pow-txt">---[Do Visit!]</span></ins>
-<span id="tagline">The American Folk Art Museum is the premier institution devoted <br>to the creative expressions of self-taught artists, past and present.<ins>1.5</ins><br>. Arsham creates indefinable moments by manipulating and reinterpreting <br>existing materials and structures to give a spectacular effect to viewers<br>out there</span><del></del><del id="pow-trigger"></del> \\
+<span id="tagline">The American Folk Art Museum <br>to the creative expressions of self-taught artists, past and present.<ins>1.5</ins><br>.Existing materials and structures to give a spectacular effect to viewer<br>out there</span><del></del><del id="pow-trigger"></del> \\
 </pre>
 
     <script>
-
-        $('#main').t({
-            beep: true,
-            caret: '<span style="color:hotpink;">.</span>',
-            typing: function (elm, chr) {
-
-                if (chr.match(/\-trigger/))
-                    $('#pow-txt').show().delay(500).fadeOut(0);
-
-            }
-        });
-
+      $("#main").t({
+        beep: true,
+        caret: '<span style="color:hotpink;">.</span>',
+        typing: function(elm, chr) {
+          if (chr.match(/\-trigger/))
+            $("#pow-txt")
+              .show()
+              .delay(500)
+              .fadeOut(0);
+        }
+      });
     </script>
     <div class="intro">
-        <button onclick="window.location.href='explore.html'" class="btn">Explore</button>
-
+      <button onclick="window.location.href='login.html'" class="btn">
+        Sign In To Continue
+      </button>
     </div>
-
-
-</body>
-
+    <script src="firebase.js"></script>
+    <script src="login.js"></script>
+  </body>
 </html>
