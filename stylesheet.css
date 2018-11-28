@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i");
 
 body {
-  padding: 180px 0 0 40px;
+  padding: 120px 0 0 40px;
   background: #101010;
 }
 
@@ -49,14 +49,14 @@ pre {
 .btn {
   font-family: Poppins;
   position: absolute;
-  top: 68%;
-  left: 50%;
+  top: 75%;
+  left: 38%;
   transform: translate(-50%, -50%);
 }
 
 button {
   display: block;
-  padding: 24px 48px;
+  padding: 22px 36px;
   font-family: Poppins;
   font-weight: 700;
   font-size: 12px;
@@ -80,15 +80,93 @@ button {
 .btn:before {
   content: "";
   position: absolute;
-  background: #755e17;
+  background: #214f85;
   bottom: 0;
   left: 0;
   right: 0;
-  top: 100%;
+  top: 0;
   z-index: -1;
   transition: top 0.8s ease-out;
 }
 
 .btn:hover:before {
   top: 0;
+}
+section {
+  padding: 0 400px;
+  font-family: Poppins;
+  background: transparent;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.box {
+  position: absolute;
+  font-family: Poppins;
+  top: 58%;
+  right: 60%;
+  max-width: 270px;
+  padding: 55px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.box h2 {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #044463;
+}
+.box p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+.intro1 button {
+  display: block;
+  padding: 18px 33px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: crosshair;
+  transition: 0.8s ease-out;
+}
+.btn2:hover {
+  color: #101010;
+  cursor: crosshair;
+}
+
+.btn2:before {
+  content: "";
+  position: absolute;
+  background: #2150853b;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: top 0.8s ease-out;
+}
+
+.btn2:hover:before {
+  top: 0;
+}
+.box2 {
+  position: absolute;
+  font-family: Poppins;
+  top: 58%;
+  right: 14%;
+  max-width: 270px;
+  padding: 55px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
